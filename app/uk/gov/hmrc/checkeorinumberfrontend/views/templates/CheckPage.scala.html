@@ -29,7 +29,13 @@
 
 @(checkForm: Form[_])(implicit request: Request[_], messages: Messages, appConfig: AppConfig)
 
-@layout(pageTitle = Some(messages("gov.uk.page-title", messages("checkpage.title")))) {
+@layout(pageTitle =
+        if(checkForm.errors.nonEmpty){
+            Some(messages("error.title") ++ ": " ++ messages("gov.uk.page-title", messages("checkpage.title")))
+        } else {
+            Some(messages("gov.uk.page-title", messages("checkpage.title")))
+        }
+){
     @formHelper(action = uk.gov.hmrc.checkeorinumberfrontend.controllers.routes.CheckEoriNumberController.result()) {
         @checkForm.errors.map { err =>
             @govukErrorSummary(ErrorSummary(

@@ -9,7 +9,8 @@ service.homePageUrl=/check-eori-number
 gov.uk.page-title={0} - Check an EORI Number - GOV.UK
 service.text=This is your new service
 continue.button=Continue
-full.stop=.
+full.stop=
+error.title=Error
 
 global.error.pageNotFound404.title=Page not found - Check an EORI number - GOV.UK
 global.error.pageNotFound404.heading=Page not found

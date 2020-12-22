@@ -10,6 +10,7 @@ gov.uk.page-title={0} - Gwiriwch rif EORI - GOV.UK
 service.text=This is your new service
 continue.button=Yn eich blaen
 full.stop=.
+error.title=Gwall
 
 global.error.pageNotFound404.title=Heb ddod o hyd i’r dudalen - Gwiriwch rif EORI - GOV.UK
 global.error.pageNotFound404.heading=Heb ddod o hyd i’r dudalen
