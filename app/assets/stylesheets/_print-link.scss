@@ -1,0 +1,7 @@
+// hide when no js available
+.print-link {
+  display: none;
+}
+.js-enabled .print-link {
+  display: inline-block;
+}
